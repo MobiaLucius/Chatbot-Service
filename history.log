@@ -1,0 +1,142 @@
+INFO:root:Q:hello
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "hello"}]}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=498 request_id=b27ffd1a8d6828bb93883acf3f5e3150 response_code=200
+INFO:root:{
+  "id": "chatcmpl-8fTM8hSPMbUI6lmRIA4tEX0fcSwrK",
+  "object": "chat.completion",
+  "created": 1704894984,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Hello! How can I assist you today?"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18,
+    "completion_tokens": 9,
+    "total_tokens": 27
+  },
+  "system_fingerprint": null
+}
+INFO:root:Q:3+2
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "3+2"}]}' message='Post details'
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=628 request_id=63cb30a741d29d66acf991b0f7ae1560 response_code=200
+INFO:root:{
+  "id": "chatcmpl-8fTMHmR1JgZlVwnuKjYiLYjc2MmMj",
+  "object": "chat.completion",
+  "created": 1704894993,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The sum of 3 and 2 is 5."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 12,
+    "total_tokens": 32
+  },
+  "system_fingerprint": null
+}
+INFO:root:Q:can you speak vietnamese?
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "can you speak vietnamese?"}]}' message='Post details'
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=1028 request_id=a6b2036a6ebfc332c3e24c14457f3750 response_code=200
+INFO:root:{
+  "id": "chatcmpl-8fTMWrmyx8XSDJUHA5XrPjLUmAqmz",
+  "object": "chat.completion",
+  "created": 1704895008,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Yes, I can assist with translations and information in Vietnamese. How can I help you today?"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 19,
+    "total_tokens": 42
+  },
+  "system_fingerprint": null
+}
+INFO:root:Q:viết 1 bài thơ lục bát về mẹ
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "vi\\u1ebft 1 b\\u00e0i th\\u01a1 l\\u1ee5c b\\u00e1t v\\u1ec1 m\\u1eb9"}]}' message='Post details'
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=26833 request_id=0487151ff6b3217d7d0c93cba528d187 response_code=200
+INFO:root:{
+  "id": "chatcmpl-8fTMsw8eHbg4Ak12YJ5086r1wqfjp",
+  "object": "chat.completion",
+  "created": 1704895030,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "M\u1eb9 y\u00eau th\u01b0\u01a1ng, \u00e1nh s\u00e1ng bao xa x\u00f4i,\nT\u1eeb khi ta c\u00f2n b\u00e9, m\u00e3i ch\u1edf che, \u0111\u00f9m b\u1ecdc.\nCu\u1ed9c s\u1ed1ng m\u1ecfi m\u1ec7t, m\u1eb9 v\u1eabn lu\u00f4n n\u1eafm tay,\nD\u1eabn d\u1eaft ta \u0111i tr\u00ean con \u0111\u01b0\u1eddng s\u1ed1ng \u0111\u1ea7y l\u01b0u luy\u1ebfn.\n\nM\u1eb9 gi\u1ea3n d\u1ecb nh\u01b0ng tr\u00e1i tim \u1ea5m \u00e1p h\u01a1n n\u1eafng,\nCh\u1ea5t ph\u00e1c kh\u00e9o l\u00e9o, \u00e2n c\u1ea7n \u0111ong \u0111\u1ea7y t\u00ecnh th\u00e2n.\nH\u00ecnh \u1ea3nh m\u1eb9 tr\u00e0n \u0111\u1ea7y v\u1ebb \u0111\u1eb9p thi\u00ean th\u1ea7n,\nL\u00e0 ngh\u0129a c\u1eed c\u1ee7a t\u00ecnh y\u00eau m\u00e3i m\u00e3i v\u00f4 bi\u00ean.\n\nM\u1eb9 tr\u00f2n tr\u1ecba, \u00f4m con n\u00e2ng niu t\u1ea5m l\u00f2ng,\nNg\u1ecdt ng\u00e0o \u00e1i \u00e2n m\u00e0 kh\u00f4ng c\u1ea7n b\u1ea5t c\u1ee9 \u0111\u00f2i h\u1ecfi.\nNh\u1eefng l\u1eddi d\u1ea1y d\u1ed7, ng\u1ecdt ng\u00e0o truy\u1ec1n \u0111\u1ebfn t\u1eadn \u0111\u00e1y,\nD\u1ea1y con ph\u1ea3i hi\u1ebfu th\u1ea3o v\u00e0 bi\u1ebft y\u00eau th\u01b0\u01a1ng th\u1eadt l\u00f2ng.\n\nM\u1eb9 nh\u01b0 c\u00e1nh chim tr\u1eddi bay qua \u0111\u1ea1i d\u01b0\u01a1ng,\nV\u01b0\u1ee3t qua s\u00f3ng gi\u00f3, kh\u1eafc s\u00e2u trong t\u00e2m h\u1ed3n.\nM\u1eb9 l\u00e0 ng\u1ecdn n\u1ebfn soi s\u00e1ng b\u00f3ng t\u1ed1i trong \u0111\u00eam,\nCho ta \u1ea5m \u00e1p, y\u00ean b\u00ecnh, gi\u1eefa cu\u1ed9c \u0111\u1eddi th\u0103ng tr\u1ea7m.\n\nM\u1eb9 l\u00e0 thi\u00ean th\u1ea7n lu\u00f4n b\u00ean con g\u1ea7n xa,\nH\u00e0nh trang s\u1ef1 s\u1ed1ng, nh\u1eefng kh\u00e1t khao c\u1ee7a ta.\nNg\u00e0y m\u1eb9 v\u1ec1 v\u1edbi tr\u1eddi cao, gi\u1edd ph\u00fat an l\u00e0nh,\nT\u00ecnh y\u00eau v\u1ec1 m\u1eb9 s\u1ebd m\u00e3i m\u00e3i ch\u00e1y trong tim say.\n\nD\u00f9 gian nan hay nh\u1ecdc nh\u1eb1n cu\u1ed9c \u0111\u1eddi tr\u00f4i qua,\nH\u00ecnh \u1ea3nh m\u1eb9 trong tim ta m\u00e3i m\u00e3i c\u00f2n \u0111\u00e2y.\nM\u1eb9, h\u00e3y tin r\u1eb1ng con lu\u00f4n b\u00ean m\u1eb9 su\u1ed1t \u0111\u1eddi,\nY\u00eau m\u1eb9 v\u00f4 \u0111i\u1ec1u ki\u1ec7n, m\u00e3i m\u00e3i d\u00e0nh cho m\u1eb9 th\u01b0\u01a1ng."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 34,
+    "completion_tokens": 569,
+    "total_tokens": 603
+  },
+  "system_fingerprint": null
+}
+INFO:root:Q:cám ơn
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "c\\u00e1m \\u01a1n"}]}' message='Post details'
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=1018 request_id=f109455a8ebd9f46382abf5a59fafd81 response_code=200
+INFO:root:{
+  "id": "chatcmpl-8fTO0yZQnkhf2SBRfyRNzdp9o5UiX",
+  "object": "chat.completion",
+  "created": 1704895100,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Kh\u00f4ng c\u00f3 g\u00ec, t\u00f4i c\u00f3 th\u1ec3 gi\u00fap g\u00ec th\u00eam kh\u00f4ng?"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 21,
+    "total_tokens": 42
+  },
+  "system_fingerprint": null
+}
